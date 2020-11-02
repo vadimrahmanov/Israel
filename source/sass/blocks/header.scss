@@ -1,0 +1,13 @@
+.header {
+  background-image: url("../img/header-desktop.png");
+  background-size: cover;
+  min-height: 906px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-desktop@2x.png");
+  }
+}
+
+.header__container {
+  margin: 0 auto;
+}
