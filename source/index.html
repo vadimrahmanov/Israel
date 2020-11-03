@@ -13,11 +13,43 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <a class="header__tel" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
       <img class="header__logo" src="img/logo.svg" width="137" height="48">
-      <a class="header__order-call" href="#">Заказать звонок</a>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-link" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-link header__navigation-list-link--call-request" href="#">Заказать звонок</a>
+          </li>
+        </ul>
+      </nav>
       <h1 class="header__title">Учёба, путешествие и карьера для еврейской молодёжи</h1>
     </div>
   </header>
+  <section class="modal-call-request">
+    <div class="modal-call-request__window">
+      <h1 class="modal-call-request__title">Заказать звонок</h1>
+      <p>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
+      <form action="http://echo.htmlacademy.ru" method="GET">
+        <label>
+          <input type="text" name="name" placeholder="Имя" required>
+          <span class="visually-hidden">Введите своё имя</span>
+        </label>
+        <label>
+          <input type="tel" name="number" placeholder="Телефон" min="8" maxlength="13" required>
+          <span class="visually-hidden">Введите номер Вашего телефона</span>
+        </label>
+        <button type="submit">Перезвоните мне</button>
+        <label>
+          <input type="checkbox" name="data-processing" required>
+          <span>Нажимая на кнопку, вы даёте согласие на обработку персональных данных</span>
+        </label>
+      </form>
+      <button class="modal-call-request__close" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+    </div>
+  </section>
 </body>
 </html>
