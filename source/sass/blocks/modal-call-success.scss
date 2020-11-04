@@ -1,0 +1,103 @@
+.modal-call-success {
+  background-color: rgba($overlay, 0.95);
+  z-index: 15;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &::before {
+    content: "";
+    height: 437px;
+    width: 410px;
+    position: absolute;
+    top: 42%;
+    left: 51%;
+    transform: translate(-50%, -40%);
+    border-radius: 8px;
+    background-color: $black;
+    filter: blur(24px);
+    z-index: -1;
+  }
+}
+
+.modal-call-success__window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  border-radius: 8px;
+  width: 480px;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 5;
+  padding-top: 205px;
+  padding-bottom: 112px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    width: 70px;
+    height: 64px;
+    background-image: url("../img/request-success-icon.svg");
+    position: absolute;
+    top: 109px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.modal-call-success__window h1 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: $blue;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.modal-call-success__window p {
+  font-family: $firasans;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  opacity: 0.87;
+  color: $black;
+  width: 360px;
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+.modal-call-success__okay {
+  width: 264px;
+  background: $yellow-gradient;
+  font-family: $firasans;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 80px;
+  border: none;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.modal-call-success__close {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 32px;
+  right: 32px;
+  background-image: url("../img/close-btn.svg");
+  background-color: $white;
+  border: none;
+}

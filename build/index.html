@@ -32,18 +32,18 @@
       <h1 class="modal-call-request__title">Заказать звонок</h1>
       <p>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
       <form action="http://echo.htmlacademy.ru" method="GET">
-        <label>
-          <input type="text" name="name" placeholder="Имя" required="">
+        <input type="text" id="name" name="name" placeholder="Имя" required="">
+        <label for="name">
           <span class="visually-hidden">Введите своё имя</span>
         </label>
-        <label>
-          <input type="tel" name="number" placeholder="Телефон" min="8" maxlength="13" required="">
+        <input type="tel" id="number" name="number" placeholder="Телефон" min="8" maxlength="13" required="">
+        <label for="number">
           <span class="visually-hidden">Введите номер Вашего телефона</span>
         </label>
         <button type="submit">Перезвоните мне</button>
-        <label>
-          <input type="checkbox" name="data-processing" required="">
-          <span>Нажимая на кнопку, вы даёте согласие на обработку персональных данных</span>
+        <input id="data-process" type="checkbox" name="data-processing" required="">
+        <label for="data-process" tabindex="0">
+          Нажимая на кнопку, вы даёте согласие<br>на обработку персональных данных
         </label>
       </form>
       <button class="modal-call-request__close" type="button">
@@ -51,5 +51,16 @@
       </button>
     </div>
   </section>
+  <section class="modal-call-success">
+    <div class="modal-call-success__window">
+      <h1>Заявка принята</h1>
+      <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+      <button class="modal-call-success__okay" type="button">Понятно</button>
+      <button class="modal-call-success__close" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
 </body>
 </html>

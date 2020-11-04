@@ -6,6 +6,21 @@
   top: 0;
   left: 0;
   width: 100%;
+  display: none;
+
+  &::before {
+    content: "";
+    height: 437px;
+    width: 410px;
+    position: absolute;
+    top: 42%;
+    left: 51%;
+    transform: translate(-50%, -40%);
+    border-radius: 8px;
+    background-color: $black;
+    filter: blur(24px);
+    z-index: -1;
+  }
 }
 
 .modal-call-request__window {
@@ -17,9 +32,10 @@
   left: 50%;
   transform: translate(-50%, -40%);
   padding-bottom: 42px;
+  z-index: 5;
 }
 
-.modal-call-request__title {
+.modal-call-request__window h1 {
   font-family: $montserrat;
   font-weight: 700;
   font-size: 28px;
@@ -50,10 +66,6 @@
   margin-top: 32px;
 }
 
-.modal-call-request__window label {
-  padding-left: 48px;
-}
-
 .modal-call-request__window input[type="text"],
 .modal-call-request__window input[type="tel"] {
   font-family: $firasans;
@@ -69,6 +81,7 @@
   padding-top: 17px;
   padding-bottom: 18px;
   margin-bottom: 8px;
+  margin-left: 48px;
 }
 
 .modal-call-request__window input::placeholder {
@@ -98,10 +111,10 @@
   margin-top: 16px;
 }
 
-.modal-call-request__window button[type="submit"] + label {
+.modal-call-request__window input[type="checkbox"] + label {
   display: flex;
   margin-top: 16px;
-  padding-left: 105px;
+  padding-left: 132px;
   position: relative;
 
   &::before {
@@ -112,6 +125,10 @@
     width: 16px;
     height: 16px;
     background-image: url("../img/checkbox.svg");
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -124,16 +141,27 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+  bottom: 70px;
+  left: 116px;
 }
 
-.modal-call-request__window input[type="checkbox"] + span {
+.modal-call-request__window input[type="checkbox"]:checked + label::before {
+  background: url("../img/checkbox.svg"), url("../img/icon-tick.svg");
+  background-position: center center, 3px 4px;
+  background-size: auto, 11px 8px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.modal-call-request__window input[type="checkbox"]:focus + label::before {
+  outline: 2px solid $yellow;
+}
+
+.modal-call-request__window label[tabindex="0"] {
   font-family: $firasans;
   font-size: 13px;
   line-height: 19px;
   color: $black;
   opacity: 0.74;
-  width: 240px;
-  padding-left: 27px;
 }
 
 .modal-call-request__close {
@@ -145,4 +173,12 @@
   background-image: url("../img/close-btn.svg");
   background-color: $white;
   border: none;
+}
+
+.request-open {
+  display: block;
+}
+
+.request-close {
+  display: none;
 }
