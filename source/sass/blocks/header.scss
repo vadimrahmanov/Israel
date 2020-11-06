@@ -1,6 +1,7 @@
 .header {
   background-image: url("../img/header-desktop.png");
-  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-desktop@2x.png");
@@ -10,13 +11,13 @@
 .header__container {
   margin: 0 auto;
   max-width: 1366px;
-  min-height: 906px;
+  min-height: 895px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 147px;
+    bottom: 136px;
     left: 50%;
     transform: translateX(-50%);
     width: 76px;
@@ -25,14 +26,14 @@
   }
 }
 
-.header__logo {
+.header__container img {
   position: absolute;
   top: 32px;
   left: 49.8%;
   transform: translateX(-50%);
 }
 
-.header__navigation-list {
+.header__container ul {
   @include list-reset;
   display: flex;
   justify-content: space-between;
@@ -55,7 +56,7 @@
   }
 }
 
-.header__title {
+.header__container h1 {
   font-family: $firasans;
   font-weight: 700;
   font-size: 24px;
@@ -66,4 +67,81 @@
   width: 343px;
   margin: 0 auto;
   padding-top: 473px;
+}
+
+@media (max-width: $tablet) {
+  .header {
+    background-size: cover;
+  }
+
+  .header__container {
+    min-height: 670px;
+
+    &::after {
+      bottom: 102px;
+    }
+  }
+
+  .header__container h1 {
+    padding-top: 280px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .header {
+    background-image: url("../img/header-mobile.png");
+    background-position: 0 20px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header-mobile@2x.png");
+    }
+  }
+
+  .header__container {
+    min-height: 617px;
+
+    &::after {
+      bottom: 71px;
+    }
+  }
+
+  .header__container img {
+    width: 120px;
+    height: 42px;
+    top: 20px;
+    left: 16px;
+    transform: none;
+  }
+
+  .header__container ul {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 19px;
+    padding-right: 8px;
+  }
+
+  .header__container h1 {
+    font-size: 20px;
+    line-height: 24px;
+    width: 288px;
+    padding-top: 272px;
+  }
+
+  .header__navigation-list-item {
+    &--call-request {
+      padding-top: 8px;
+      padding-right: 2px;
+    }
+  }
+
+  .header__navigation-list-link {
+    font-size: 14px;
+    line-height: 17px;
+
+    &--call-request {
+      border-bottom: 1px dashed $black;
+      letter-spacing: -0.7px;
+    }
+  }
 }

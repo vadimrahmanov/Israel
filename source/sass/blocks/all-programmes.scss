@@ -1,0 +1,125 @@
+.all-programmes {
+  padding-top: 68px;
+  background-image: url("../img/programmes_bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: right 53px;
+}
+
+.all-programmes__container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.all-programmes__tabs {
+  display: flex;
+  margin-left: 210px;
+}
+
+.all-programmes__container h2 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  margin-left: 210px;
+}
+
+.all-programmes__tabs-controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.all-programmes__tabs-btn {
+  font-family: $firasans;
+  font-size: 15px;
+  line-height: 18px;
+  color: $black;
+  opacity: 0.87;
+  width: 228px;
+  height: 72px;
+  background-color: $white;
+  border: none;
+  text-align: left;
+  padding-left: 73px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--common {
+    &::before {
+      background-image: url("../img/common.svg");
+      width: 28px;
+      height: 33px;
+      left: 24px;
+      top: 20px;
+    }
+  }
+
+  &--academic {
+    &::before {
+      background-image: url("../img/academic.svg");
+      width: 36px;
+      height: 35px;
+      left: 20px;
+      top: 18px;
+    }
+  }
+
+  &--internships {
+    &::before {
+      background-image: url("../img/internship.svg");
+      width: 32px;
+      height: 25px;
+      left: 22px;
+      top: 23px;
+    }
+  }
+
+  &--voluntery {
+    &::before {
+      background-image: url("../img/voluntery.svg");
+      width: 32px;
+      height: 29px;
+      left: 22px;
+      top: 21px;
+    }
+  }
+
+  &--religion {
+    &::before {
+      background-image: url("../img/religic.svg");
+      width: 23px;
+      height: 25px;
+      left: 26px;
+      top: 23px;
+    }
+  }
+}
+
+.all-programmes__tabs-content {
+  padding-left: 64px;
+}
+
+.all-programmes__tabs-content-item h3 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: $blue;
+}
+
+.all-programmes__tabs-content-item p {
+  font-family: $firasans;
+  font-size: 15px;
+  line-height: 26px;
+  color: $black;
+  opacity: 0.87;
+  width: 560px;
+}

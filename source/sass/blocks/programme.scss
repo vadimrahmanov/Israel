@@ -1,0 +1,103 @@
+.programme {
+  background-image: url("../img/about_bg-desktop.png");
+  background-position: center 160px;
+  background-repeat: no-repeat;
+  padding-bottom: 95px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about_bg-desktop@2x.png");
+  }
+}
+
+.programme__container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.programme__container h2 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  margin: 0;
+}
+
+.programme__container p {
+  font-family: $firasans;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  color: $black;
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.programme__video {
+  text-align: center;
+  position: relative;
+  padding-top: 48px;
+}
+
+.programme__video-play-btn {
+  background-image: url("../img/play-btn.svg");
+  border: none;
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  left: 50%;
+  top: 227px;
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+
+@media (max-width: $tablet) {
+  .programme__video-player {
+    width: 680px;
+    height: 400px;
+  }
+
+  .programme__video-play-btn {
+    top: 183px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .programme {
+    background-image: url("../img/about_bg-mobile.png");
+    background-position: center 200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about_bg-mobile@2x.png");
+    }
+  }
+
+  .programme__video-player {
+    width: 320px;
+    height: 224px;
+  }
+
+  .programme__container h2 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 15px;
+  }
+
+  .programme__container p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    width: 288px;
+  }
+
+  .programme__video-play-btn {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    top: 128px;
+  }
+}

@@ -109,6 +109,7 @@
   padding-bottom: 20px;
   margin: 0 auto;
   margin-top: 16px;
+  cursor: pointer;
 }
 
 .modal-call-request__window input[type="checkbox"] + label {
@@ -181,4 +182,60 @@
 
 .request-close {
   display: none;
+}
+
+@media (max-width: $mobile) {
+  .modal-call-request {
+    background-color: $white;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  .modal-call-request__window {
+    width: 320px;
+    height: 100vh;
+  }
+
+  .modal-call-request__window h1 {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 194px;
+  }
+
+  .modal-call-request__window p {
+    font-size: 14px;
+    line-height: 22px;
+    width: 287px;
+    padding-left: 17px;
+    padding-top: 17px;
+    text-align: center;
+  }
+
+  .modal-call-request__window input[type="text"],
+  .modal-call-request__window input[type="tel"] {
+    width: 288px;
+    margin-left: 16px;
+  }
+
+  .modal-call-request__close {
+    top: 49px;
+    right: 24px;
+  }
+
+  .modal-call-request__window input[type="checkbox"] + label {
+    padding-left: 52px;
+  }
+
+  .modal-call-request__window input[type="checkbox"] + label::before {
+    left: 28px;
+  }
+
+  .modal-call-request__window input[type="checkbox"] {
+    bottom: 297px;
+    left: 37px;
+  }
 }
