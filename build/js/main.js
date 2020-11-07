@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-env es6 */
 
 (function () {
   var requestModal = document.querySelector('.modal-call-request');
@@ -13,6 +14,7 @@
   var successOkayBtn = successModal.querySelector('.modal-call-success__okay');
   var storageName = '';
   var storagePhone = '';
+  var programmeContent = document.querySelectorAll('.all-programmes__tabs-content-item');
 
   try {
     storageName = localStorage.getItem('name');
@@ -88,5 +90,54 @@
     if (e.target === successModal) {
       closePopup(successModal);
     }
+  });
+
+  for (var j = 0; j < programmeContent.length; j++) {
+    programmeContent[j].classList.add('programme-content-hide');
+  }
+
+  class Tabs {
+    constructor() {
+      this.tabList = document.querySelectorAll('.all-programmes__tabs-btn');
+      this.contentList = document.querySelectorAll('.all-programmes__tabs-content-item');
+      var nav = document.querySelector('.all-programmes__tabs-controls');
+
+      nav.addEventListener('click', e => this.show(e));
+
+      this.setIndex();
+    }
+
+    show(e) {
+      var t = e.target;
+      if (!t.classList.contains('all-programmes__tabs-btn')) {
+        return;
+      }
+      this.removePrev();
+
+      var index = t.getAttribute('data-index');
+      var content = document.querySelector('.all-programmes__tabs-content-item[data-index="' + index + '"]');
+
+      t.classList.add('programme-btn-current');
+      content.classList.add('programme-content-current');
+    }
+
+    setIndex() {
+      for (var i = 0; i < this.tabList.length; i++) {
+        this.tabList[i].setAttribute('data-index', i);
+        this.contentList[i].setAttribute('data-index', i);
+      }
+    }
+
+    removePrev() {
+      for (var i = 0; i < this.tabList.length; i++) {
+        this.tabList[i].classList.remove('programme-btn-current');
+        this.contentList[i].classList.remove('programme-content-current');
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', ()=> {
+    // eslint-disable-next-line no-unused-vars
+    var tabs = new Tabs();
   });
 })();

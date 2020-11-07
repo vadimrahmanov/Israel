@@ -70,6 +70,7 @@
   .programme {
     background-image: url("../img/about_bg-mobile.png");
     background-position: center 200px;
+    padding-bottom: 9px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/about_bg-mobile@2x.png");
