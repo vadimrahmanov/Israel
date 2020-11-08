@@ -6,6 +6,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/programmes_bg-desktop@2x.png");
+    background-size: 680px 426px;
   }
 }
 
@@ -190,7 +191,7 @@
   }
 
   .programme-btn-current {
-    background-image: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+    background-image: $yellow-gradient;
     border-radius: 60.6704px;
   }
 }
@@ -198,9 +199,11 @@
 @media (max-width: $mobile) {
   .all-programmes {
     background-image: url("../img/programmes_bg-mobile.png");
+    background-position: right 185px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/programmes_bg-mobile@2x.png");
+      background-size: 296px 201px;
     }
   }
 

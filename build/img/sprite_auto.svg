@@ -48,6 +48,11 @@
 <stop offset="0.963542" stop-color="#FFD701"/>
 </linearGradient>
 
+<linearGradient id="paint0_linear" x1="2.26316" y1="1.2" x2="2.88358" y2="1.20492" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFC341"/>
+<stop offset="0.963542" stop-color="#FFD701"/>
+</linearGradient>
+
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.0588235 0.0384615)"/>
 </pattern>
@@ -85,6 +90,8 @@
 </symbol><symbol id="internship" viewBox="0 0 32 25">
   
   <path d="M9 1.9C8.3 3.2 6.7 4 4.2 4.2l-3.7.3-.3 9.1C0 20.5.3 23 1.4 23.9c.9.8 5.8 1.1 15.7.9l14.4-.3v-20l-3.7-.3c-2.5-.2-4.1-1-4.8-2.3C22.1.4 20.8 0 16 0S9.9.4 9 1.9zM21 3c0 .5-2.2 1-5 1-2.7 0-5-.5-5-1 0-.6 2.3-1 5-1 2.8 0 5 .4 5 1zm8.8 4.2c-1.4 4.3-18.1 6-24.5 2.5C3.5 8.7 2 7.5 2 7c0-.6 5.6-1 14.1-1 10.8 0 14 .3 13.7 1.2zm-21 5.9c2.3.6 4.2 1.7 4.2 2.5 0 1.8 5.6 1.9 6.7.1.4-.8 2.2-1.9 3.8-2.4 1.7-.6 3.8-1.4 4.8-1.8 1.5-.6 1.7 0 1.7 5.4v6.2l-13.7-.3-13.8-.3-.3-5.9c-.2-4.5 0-5.7 1-5.3.7.3 3.2 1.1 5.6 1.8z"/>
+</symbol><symbol id="list-vector" viewBox="0 0 2 193">
+<path opacity="0.2" d="M1 0.5V193" stroke="#484848" stroke-dasharray="4 4"/>
 </symbol><symbol id="logo" viewBox="0 0 137 48">
 <rect width="137" height="48" fill="url(#pattern0)"/>
 
@@ -107,6 +114,9 @@
 </symbol><symbol id="request-success-icon" viewBox="0 0 71 64">
 <rect x="3" y="3" width="58" height="58" rx="29" stroke="url(#paint0_linear)" stroke-width="6"/>
 <path d="M18 27.88L32.1972 43L66 7" stroke="url(#paint1_linear)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+</symbol><symbol id="requirements-vector" viewBox="0 0 4 42">
+<path d="M2 0L2 42" stroke="url(#paint0_linear)" stroke-width="4"/>
 
 </symbol><symbol id="scroll_hint" viewBox="0 0 76 132">
 <path d="M38 76V131.5" stroke="white"/>

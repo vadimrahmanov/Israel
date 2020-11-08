@@ -1,0 +1,178 @@
+.enquiry {
+  margin-top: 45px;
+  padding-top: 177px;
+  background-image: url("../img/enquiry_backpack-desktop.png");
+  background-repeat: no-repeat;
+  background-position: left 103px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/enquiry_backpack-desktop@2x.png");
+    background-size: 147px 262px;
+  }
+}
+
+.enquiry__container {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.enquiry__content {
+  margin-left: 15.34%;
+}
+
+.enquiry__content h2 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  margin: 0;
+}
+
+.enquiry__content p {
+  font-family: $firasans;
+  font-size: 17px;
+  line-height: 29px;
+  color: $black;
+  opacity: 0.87;
+  width: 400px;
+  margin: 0;
+  padding-top: 24px;
+}
+
+.enquiry__content form {
+  margin-top: 64px;
+  position: relative;
+  width: 477px;
+}
+
+.enquiry__content input {
+  font-family: $firasans;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  opacity: 0.5;
+  width: 360px;
+  border: 2px solid #e3e3e3;
+  box-sizing: border-box;
+  border-radius: 80px;
+  padding-left: 38px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  letter-spacing: -1.1px;
+}
+
+.enquiry__content button {
+  width: 216px;
+  background: $yellow-gradient;
+  font-family: $firasans;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  letter-spacing: -1px;
+  padding-bottom: 18px;
+  padding-top: 21px;
+}
+
+.enquiry__container img {
+  position: absolute;
+  top: -209px;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: $tablet) {
+  .enquiry__container {
+    flex-direction: column;
+  }
+
+  .enquiry__content {
+    margin-left: 0;
+  }
+
+  .enquiry__content h2 {
+    text-align: center;
+  }
+
+  .enquiry__content p {
+    margin: 0 auto;
+    width: 374px;
+  }
+
+  .enquiry__content form {
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+
+  .enquiry__container img {
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $mobile) {
+  .enquiry {
+    padding-top: 34px;
+    background-image: url("../img/enquiry_backpack-mobile.png");
+    background-position: left -14px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/enquiry_backpack-mobile@2x.png");
+      background-size: 103px 188px;
+    }
+  }
+
+  .enquiry__content h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .enquiry__content p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 286px;
+  }
+
+  .enquiry__content form {
+    width: 287px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .enquiry__content input {
+    width: 287px;
+  }
+
+  .enquiry__content button {
+    width: 264px;
+    position: static;
+    margin-top: 7px;
+    margin-left: 4%;
+  }
+
+  .enquiry__container img {
+    width: 320px;
+    height: 250px;
+    margin: 0 auto;
+    left: 0;
+    top: 291px;
+    transform: translateX(0);
+  }
+}

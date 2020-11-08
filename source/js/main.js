@@ -8,19 +8,27 @@
   var requestForm = document.querySelector('.modal-call-request form');
   var formName = requestForm.querySelector('#name');
   var formTelephone = requestForm.querySelector('#number');
+  var enquiryForm = document.querySelector('.enquiry form');
+  var enquiryNumber = enquiryForm.querySelector('#number2');
   var isStorageSupport = true;
   var successModal = document.querySelector('.modal-call-success');
   var successCloseBtn = successModal.querySelector('.modal-call-success__close');
   var successOkayBtn = successModal.querySelector('.modal-call-success__okay');
+  var programmeContent = document.querySelectorAll('.all-programmes__tabs-content-item');
   var storageName = '';
   var storagePhone = '';
-  var programmeContent = document.querySelectorAll('.all-programmes__tabs-content-item');
+  var storageEnqPhone = '';
 
   try {
     storageName = localStorage.getItem('name');
     storagePhone = localStorage.getItem('phone');
+    storageEnqPhone = localStorage.getItem('enqPhone');
   } catch (err) {
     isStorageSupport = false;
+  }
+
+  if (storageEnqPhone) {
+    enquiryNumber.value = storageEnqPhone;
   }
 
   function openPopup(modalWindow) {
@@ -47,8 +55,6 @@
 
     if (storagePhone) {
       formTelephone.value = storagePhone;
-    } else {
-      formTelephone.focus();
     }
   });
 
@@ -90,6 +96,14 @@
     if (e.target === successModal) {
       closePopup(successModal);
     }
+  });
+
+  enquiryForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    if (isStorageSupport) {
+      localStorage.setItem('enqPhone', enquiryNumber.value);
+    }
+    onSuccess();
   });
 
   for (var j = 0; j < programmeContent.length; j++) {

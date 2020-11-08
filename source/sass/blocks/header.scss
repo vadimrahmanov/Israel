@@ -5,6 +5,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/header-desktop@2x.png");
+    background-size: 1366px 906px;
   }
 }
 
@@ -94,6 +95,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-mobile@2x.png");
+      background-size: 320px 617px;
     }
   }
 
