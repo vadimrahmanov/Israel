@@ -117,6 +117,14 @@
   }
 }
 
+.requirements__image {
+  width: 43.4%;
+}
+
+.requirements__image img {
+  width: 98%;
+}
+
 
 .requirements__content ol + p {
   line-height: 21px;
@@ -147,7 +155,7 @@
     align-items: center;
   }
 
-  .requirements__container img {
+  .requirements__image {
     display: none;
   }
 
@@ -156,5 +164,75 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: $mobile) {
+  .requirements {
+    margin-top: 227px;
+    background-image: url("../img/stamp-mobile.png");
+    background-position: right 436px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 216px 199px;
+    }
+  }
+
+  .requirements__content h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .requirements__content p {
+    font-size: 14px;
+    line-height: 22px;
+    width: 288px;
+  }
+
+  .requirements__content p + p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 288px;
+    padding-top: 23px;
+  }
+
+  .requirements__content ol {
+    padding-top: 31px;
+
+    &::before {
+      height: 231px;
+      left: 9px;
+    }
+  }
+
+  .requirements__content ol p {
+    width: 244px;
+  }
+
+  .requirements__content li {
+    &::before {
+      top: -7px;
+      left: -8px;
+    }
+
+    &::after {
+      top: -4px;
+      left: 6px;
+    }
+
+    &:last-child {
+      padding-bottom: 12px;
+    }
+  }
+
+  .requirements__content ol + p {
+    line-height: 22px;
+    width: 280px;
+    padding-left: 8px;
+
+    &::before {
+      height: 88px;
+      left: -6px;
+    }
   }
 }

@@ -48,11 +48,6 @@
 <stop offset="0.963542" stop-color="#FFD701"/>
 </linearGradient>
 
-<linearGradient id="paint0_linear" x1="2.26316" y1="1.2" x2="2.88358" y2="1.20492" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFC341"/>
-<stop offset="0.963542" stop-color="#FFD701"/>
-</linearGradient>
-
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.0588235 0.0384615)"/>
 </pattern>
@@ -114,9 +109,6 @@
 </symbol><symbol id="request-success-icon" viewBox="0 0 71 64">
 <rect x="3" y="3" width="58" height="58" rx="29" stroke="url(#paint0_linear)" stroke-width="6"/>
 <path d="M18 27.88L32.1972 43L66 7" stroke="url(#paint1_linear)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-
-</symbol><symbol id="requirements-vector" viewBox="0 0 4 42">
-<path d="M2 0L2 42" stroke="url(#paint0_linear)" stroke-width="4"/>
 
 </symbol><symbol id="scroll_hint" viewBox="0 0 76 132">
 <path d="M38 76V131.5" stroke="white"/>

@@ -1,0 +1,247 @@
+.israel {
+  margin-top: 156px;
+  background-image: url("../img/watch.png");
+  background-position: right 613px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/watch@2x.png");
+    background-size: 90px 148px;
+  }
+}
+
+.israel__container {
+  max-width: 1366px;
+  min-height: 908px;
+  margin: 0 auto;
+  background-image: url("../img/lifeisrael_bg.png");
+  background-position: center -43px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/lifeisrael_bg@2x.png");
+    background-size: 1366px 950px;
+  }
+}
+
+.israel__container h2 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  text-align: center;
+  margin: 0;
+}
+
+.israel__container p {
+  font-family: $firasans;
+  font-size: 17px;
+  line-height: 29px;
+  color: $black;
+  text-align: right;
+  opacity: 0.87;
+  padding-top: 24px;
+  width: 720px;
+  margin: 0;
+  margin-left: 22.8%;
+}
+
+.israel__slider {
+  display: flex;
+  margin-left: 7.58%;
+  margin-top: -21px;
+  margin-right: 2.7%;
+}
+
+.israel__slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &--slide1 {
+    width: 39.4%;
+  }
+
+  &--slide1 p {
+    width: 63%;
+    left: 38px;
+    bottom: 33px;
+  }
+
+  &--slide2 {
+    width: 30.1%;
+  }
+
+  &--slide2 p {
+    width: 120px;
+    left: 24px;
+    bottom: 32px;
+  }
+
+  &--slide3 {
+    width: 58.72%;
+    margin-left: 4.3%;
+  }
+
+  &--slide3 p {
+    width: 320px;
+    left: 32px;
+    bottom: 32px;
+  }
+
+  &--slide4 {
+    margin-top: 30px;
+    width: 58.6%;
+  }
+
+  &--slide4 p {
+    width: 88%;
+    left: 32px;
+    bottom: 32px;
+  }
+
+  &--slide5 {
+    width: 30.58%;
+    margin-top: 30px;
+    margin-left: 4.3%;
+  }
+
+  &--slide5 p {
+    width: 120px;
+    left: 25px;
+    bottom: 32px;
+  }
+}
+
+.israel__slide img {
+  width: 100%;
+}
+
+.israel__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  margin-top: 67px;
+  margin-left: 1.2%;
+}
+
+.israel__slide p {
+  font-family: $raleway;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 25px;
+  color: $white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  opacity: 1;
+  position: absolute;
+}
+
+.israel__paginator {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .israel__container {
+    background-image: none;
+  }
+
+  .israel__container p {
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .israel__slider {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .israel__slide {
+    &--slide1 {
+      width: 65%;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .israel {
+    background-image: none;
+    margin-top: 79px;
+  }
+
+  .israel__container h2 {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .israel__container p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 274px;
+    padding-top: 24px;
+    padding-right: 14px;
+  }
+
+  .israel__wrapper {
+    display: none;
+  }
+
+  .israel__slide img {
+    width: 264px;
+    height: 400px;
+  }
+
+  .israel__slider {
+    margin: 0;
+  }
+
+  .israel__slide {
+    margin-top: 24px;
+    width: 264px;
+    height: 400px;
+
+    &--slide1 p {
+      left: 4px;
+      bottom: 24px;
+      width: 256px;
+    }
+  }
+
+  .israel__slide p {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .israel__paginator {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .israel__paginator-btn {
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: $black;
+    opacity: 0.2;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 3px;
+
+    &--active {
+      width: 8px;
+      height: 8px;
+      background: $yellow-gradient;
+      opacity: 1;
+    }
+  }
+}
