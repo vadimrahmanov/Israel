@@ -15,6 +15,8 @@
   var successCloseBtn = successModal.querySelector('.modal-call-success__close');
   var successOkayBtn = successModal.querySelector('.modal-call-success__okay');
   var programmeContent = document.querySelectorAll('.all-programmes__tabs-content-item');
+  var faqItem = document.querySelectorAll('.faq__content li');
+  var faqText = document.querySelectorAll('.faq__content p');
   var storageName = '';
   var storagePhone = '';
   var storageEnqPhone = '';
@@ -105,6 +107,15 @@
     }
     onSuccess();
   });
+
+  for (var c = 0; c < faqItem.length; c++) {
+    faqText[c].classList.add('faq-hidden');
+    faqItem[c].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      evt.currentTarget.classList.toggle('faq-visible-li');
+      evt.currentTarget.querySelector('p').classList.toggle('faq-visible');
+    });
+  }
 
   for (var j = 0; j < programmeContent.length; j++) {
     programmeContent[j].classList.add('programme-content-hide');

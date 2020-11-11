@@ -50,6 +50,12 @@
   text-align: left;
   padding-left: 73px;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    fill: $yellow;
+    color: $yellow;
+  }
 }
 
 .all-programmes__icon {
@@ -93,6 +99,11 @@
   letter-spacing: -0.4px;
   padding-top: 4px;
   fill: $white;
+
+  &:hover {
+    fill: $white;
+    color: $white;
+  }
 }
 
 .all-programmes__tabs-content {
