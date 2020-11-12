@@ -8,7 +8,8 @@
   <meta name="description" content="«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от $4200 до $8400.">
   <meta name="keywords" content="Израиль, стажировка, учёба в Израиле, еврейская молодёжь, карьера, Сохнут, Маса">
   <title>Израиль - Учёба, путешествие и карьера для еврейской молодёжи</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="js/vendors/owl.carousel.css">
+  <link rel="stylesheet" href="js/vendors/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicon.ico">
   <link rel="preload" href="fonts/fira-sans-bold.woff2" as="font">
@@ -203,46 +204,34 @@
         <h2>Жизнь в&nbsp;Израиле</h2>
         <p>Помимо учёбы, в рамках программе у&nbsp;вас будет возможность путешествовать по стране и познакомиться с
           богатой культурно-исторической жизнью Израиля и его жителей.</p>
-        <div class="israel__slider">
+        <div class="israel__slider owl-carousel">
           <div class="israel__slide israel__slide--slide1">
             <img src="img/1.png" width="482" height="732" alt="Изображение синагоги">
             <p>Экскурсии по Израилю и&nbsp;знакомство с его историей</p>
           </div>
-          <div class="israel__wrapper">
-            <div class="israel__slide israel__slide--slide2">
-              <img src="img/2.png" width="211" height="318" alt="Парень сидит и изучает иврит">
-              <p>Изучение иврита</p>
-            </div>
-            <div class="israel__slide israel__slide--slide3">
-              <img src="img/3.png" width="411" height="318" alt="Парень помогает разрбраться коллеге с видеоредактором">
-              <p>Обучение современным навыкам и профессиям</p>
-            </div>
-            <div class="israel__slide israel__slide--slide4">
-              <img src="img/4.png" width="411" height="318" alt="Парень с двумя девушками">
-              <p>Совместные творческие проекты с израильской молодёжью</p>
-            </div>
-            <div class="israel__slide israel__slide--slide5">
-              <img src="img/5.png" width="214" height="318" alt="Парень в шапке стоит на горе на закате солнца">
-              <p>Развитие лидерства</p>
-            </div>
+          <div class="israel__slide israel__slide--slide2">
+            <img src="img/2.png" width="211" height="318" alt="Парень сидит и изучает иврит">
+            <p>Изучение иврита</p>
+          </div>
+          <div class="israel__slide israel__slide--slide3">
+            <img src="img/3.png" width="411" height="318" alt="Парень помогает разрбраться коллеге с видеоредактором">
+            <p>Обучение современным навыкам и профессиям</p>
+          </div>
+          <div class="israel__slide israel__slide--slide4">
+            <img src="img/4.png" width="411" height="318" alt="Парень с двумя девушками">
+            <p>Совместные творческие проекты с израильской молодёжью</p>
+          </div>
+          <div class="israel__slide israel__slide--slide5">
+            <img src="img/5.png" width="214" height="318" alt="Парень в шапке стоит на горе на закате солнца">
+            <p>Развитие лидерства</p>
           </div>
         </div>
-        <div class="israel__paginator">
-          <button class="israel__paginator-btn israel__paginator-btn--active" type="button">
-            <span class="visually-hidden">Первый слайд</span>
-          </button>
-          <button class="israel__paginator-btn" type="button">
-            <span class="visually-hidden">Второй слайд</span>
-          </button>
-          <button class="israel__paginator-btn" type="button">
-            <span class="visually-hidden">Третий слайд</span>
-          </button>
-          <button class="israel__paginator-btn" type="button">
-            <span class="visually-hidden">Четвёртый слайд</span>
-          </button>
-          <button class="israel__paginator-btn" type="button">
-            <span class="visually-hidden">Пятый слайд</span>
-          </button>
+        <div class="owl-dots">
+          <div class="owl-dot"><span></span></div>
+          <div class="owl-dot"><span></span></div>
+          <div class="owl-dot"><span></span></div>
+          <div class="owl-dot"><span></span></div>
+          <div class="owl-dot"><span></span></div>
         </div>
       </div>
     </section>
@@ -261,11 +250,17 @@
           <ol>
             <li>
               <h3>Кто организатор? Какие сроки у программы?</h3>
-              <p>Организатором является агенство Маса, которое является проектом правительства Израиля и Еврейского агентства «Сохнут», задача которого - поддержать долгосрочные программы в Израиле. Цель проекта - способствовать ежегодномупребыванию в Израиле тысяч молодых людей в возрасте от 18 до 30 лет из стран диаспоры в рамках различных долгосрочных программ продолжительностью от 1 семестра до года.</p>
+              <p>Организатором является агенство Маса, которое является проектом правительства Израиля и Еврейского
+                агентства «Сохнут», задача которого - поддержать долгосрочные программы в Израиле. Цель проекта -
+                способствовать ежегодномупребыванию в Израиле тысяч молодых людей в возрасте от 18 до 30 лет из стран
+                диаспоры в рамках различных долгосрочных программ продолжительностью от 1 семестра до года.</p>
             </li>
             <li>
               <h3>Что такое грант на обучение?</h3>
-              <p>Грант Маса - это основное средство, с помощью которого Еврейское агентство «Сохнут» и правительство Израиля намерены достичь цели проекта. Компания Маса - дочерняя компания Еврейского агентства, созданная для реализации проектов и выдающая гранты (для жителей СНГ и стран Балтии) в соответствии с продолжительностью программы и ее стоимостью.</p>
+              <p>Грант Маса - это основное средство, с помощью которого Еврейское агентство «Сохнут» и правительство
+                Израиля намерены достичь цели проекта. Компания Маса - дочерняя компания Еврейского агентства, созданная
+                для реализации проектов и выдающая гранты (для жителей СНГ и стран Балтии) в соответствии с
+                продолжительностью программы и ее стоимостью.</p>
             </li>
             <li class="faq-visible-li">
               <h3>Как определяется стоимость программы?</h3>
@@ -275,11 +270,19 @@
             </li>
             <li>
               <h3>Что такое грант на обучение?</h3>
-              <p>Грант Маса - это основное средство, с помощью которого Еврейское агентство «Сохнут» и правительство Израиля намерены достичь цели проекта. Компания Маса - дочерняя компания Еврейского агентства, созданная для реализации проектов и выдающая гранты (для жителей СНГ и стран Балтии) в соответствии с продолжительностью программы и ее стоимостью.</p>
+              <p>Грант Маса - это основное средство, с помощью которого Еврейское агентство «Сохнут» и правительство
+                Израиля намерены достичь цели проекта. Компания Маса - дочерняя компания Еврейского агентства, созданная
+                для реализации проектов и выдающая гранты (для жителей СНГ и стран Балтии) в соответствии с
+                продолжительностью программы и ее стоимостью.</p>
             </li>
             <li>
               <h3>Признаётся ли учеба в рамках проекта для дальнейшего обучения?</h3>
-              <p>Университеты Израиля и западных стран признают академическую учебу в рамках проекта Маса, если организатор заявляет об академической аккредитации его программы. Ситуация в СНГ более сложная, и признание обучения зависит, как правило, от решения каждого отдельного учебного заведения. Выясните заранее в Вашем учебном заведении, будет ли им признана Ваша учеба в рамках проекта Маса, или сможете ли Вы добиться такой аккредитации по возвращении из Израиля. Руководство проекта Маса не несет ответственности за академическую аккредитацию. За это отвечает только организатор учебной программы.</p>
+              <p>Университеты Израиля и западных стран признают академическую учебу в рамках проекта Маса, если
+                организатор заявляет об академической аккредитации его программы. Ситуация в СНГ более сложная, и
+                признание обучения зависит, как правило, от решения каждого отдельного учебного заведения. Выясните
+                заранее в Вашем учебном заведении, будет ли им признана Ваша учеба в рамках проекта Маса, или сможете ли
+                Вы добиться такой аккредитации по возвращении из Израиля. Руководство проекта Маса не несет
+                ответственности за академическую аккредитацию. За это отвечает только организатор учебной программы.</p>
             </li>
             <li>
               <h3>Как выглдядит полный процесс регистрации<br>на программу «Маса»?</h3>
@@ -287,10 +290,12 @@
                 Выбор программы.
                 Связь с координатором выбранной программы и запись на консульскую проверку.
                 Заполнение анкеты на сайте Маса.
-                Загрузить документы об успешном прохождении консульской проверки на портал участников через личный кабинет.
+                Загрузить документы об успешном прохождении консульской проверки на портал участников через личный
+                кабинет.
                 Получение студенческой визы А2 в консульстве на основании письма от Маса об одобренном гранте.
-                На каждом этапе регистрации вы можете обратиться за помощью к представителю программ Маса в Израиле по адресу: masainforus@masaisrael.org
-                </p>
+                На каждом этапе регистрации вы можете обратиться за помощью к представителю программ Маса в Израиле по
+                адресу: masainforus@masaisrael.org
+              </p>
             </li>
           </ol>
         </div>
@@ -303,59 +308,428 @@
       <div class="feedback__container">
         <h2>Отзывы</h2>
         <div class="feedback__slider">
-          <div class="feedback__image">
-            <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
-          </div>
-          <article class="feedback__slide">
-            <blockquote class="feedback__content">
-              <cite>Ольга Михайлова</cite>
-              <p>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.
-              <br><br>
-              С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны. </p>
-              <a href="#">Читать подробнее</a>
-            </blockquote>
-            <div class="feedback__navigation">
-              <span>3 / 6</span>
-              <button class="feedback__button feedback__button--prev" type="button">
-                <span class="visually-hidden">Предыдущий отзыв</span>
-              </button>
-              <button class="feedback__button feedback__button--next" type="button">
-                <span class="visually-hidden">Следующий отзыв</span>
-              </button>
+          <div class="feedback__slide">
+            <div class="feedback__image">
+              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
             </div>
-            <ul>
-              <li>
-                <div class="feedback__social-media-facebook">
-                  <a href="#">
-                    <span class="visually-hidden">Facebook</span>
-                  </a>
+            <article class="feedback__slide-content">
+              <blockquote class="feedback__content">
+                <cite>Мария Линдерман</cite>
+                <div class="feedback__programme">
+                  <p>Программа:</p>
+                  <p>Иврит, март-декабрь 2019</p>
                 </div>
-              </li>
-              <li>
-                <div class="feedback__social-media-twitter">
-                  <a href="#">
-                    <span class="visually-hidden">Twitter</span>
-                  </a>
+                <q>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+                  Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</q>
+                <br>
+                <q>С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная
+                  поддержка
+                  по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой
+                  курс
+                  а еще и поездки всей программой в разные уголки страны. </q>
+                <a href="#">Читать подробнее</a>
+              </blockquote>
+              <div class="feedback__navigation">
+                <span>1 / 6</span>
+                <div class="feedback__controls">
+                  <button class="feedback__button feedback__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий отзыв</span>
+                  </button>
+                  <button class="feedback__button feedback__button--next" type="button">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                  </button>
                 </div>
-              </li>
-              <li>
-                <div class="feedback__social-media-instagram">
-                  <a href="#">
-                    <span class="visually-hidden">Instagram</span>
-                  </a>
+                <ul>
+                  <li>
+                    <div class="feedback__social-media-facebook">
+                      <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-twitter">
+                      <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-instagram">
+                      <a href="#">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="feedback__slide">
+            <div class="feedback__image">
+              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+            </div>
+            <article class="feedback__slide-content">
+              <blockquote class="feedback__content">
+                <cite>Анна Гольдман</cite>
+                <div class="feedback__programme">
+                  <p>Программа:</p>
+                  <p>Стажировка Front-end разработки, январь-сентябрь 2018</p>
                 </div>
-              </li>
-            </ul>
-          </article>
+                <q>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+                  Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</q>
+                <br>
+                <q>С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная
+                  поддержка
+                  по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой
+                  курс
+                  а еще и поездки всей программой в разные уголки страны. </q>
+                <a href="#">Читать подробнее</a>
+              </blockquote>
+              <div class="feedback__navigation">
+                <span>2 / 6</span>
+                <div class="feedback__controls">
+                  <button class="feedback__button feedback__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий отзыв</span>
+                  </button>
+                  <button class="feedback__button feedback__button--next" type="button">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="feedback__social-media-facebook">
+                      <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-twitter">
+                      <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-instagram">
+                      <a href="#">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="feedback__slide feedback-active">
+            <div class="feedback__image">
+              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+            </div>
+            <article class="feedback__slide-content">
+              <blockquote class="feedback__content">
+                <cite>Ольга Михайлова</cite>
+                <div class="feedback__programme">
+                  <p>Программа:</p>
+                  <p>Арт-Тель, февраль-сетнябрь 2017</p>
+                </div>
+                <q>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+                  Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</q>
+                <br>
+                <q>С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная
+                  поддержка
+                  по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой
+                  курс
+                  а еще и поездки всей программой в разные уголки страны. </q>
+                <a href="#">Читать подробнее</a>
+              </blockquote>
+              <div class="feedback__navigation">
+                <span>3 / 6</span>
+                <div class="feedback__controls">
+                  <button class="feedback__button feedback__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий отзыв</span>
+                  </button>
+                  <button class="feedback__button feedback__button--next" type="button">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="feedback__social-media-facebook">
+                      <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-twitter">
+                      <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-instagram">
+                      <a href="#">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="feedback__slide">
+            <div class="feedback__image">
+              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+            </div>
+            <article class="feedback__slide-content">
+              <blockquote class="feedback__content">
+                <cite>Сара Зельцерман</cite>
+                <div class="feedback__programme">
+                  <p>Программа:</p>
+                  <p>История иудаизма, февраль 2016 - январь 2017</p>
+                </div>
+                <q>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+                  Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</q>
+                <br>
+                <q>С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная
+                  поддержка
+                  по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой
+                  курс
+                  а еще и поездки всей программой в разные уголки страны. </q>
+                <a href="#">Читать подробнее</a>
+              </blockquote>
+              <div class="feedback__navigation">
+                <span>4 / 6</span>
+                <div class="feedback__controls">
+                  <button class="feedback__button feedback__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий отзыв</span>
+                  </button>
+                  <button class="feedback__button feedback__button--next" type="button">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="feedback__social-media-facebook">
+                      <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-twitter">
+                      <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-instagram">
+                      <a href="#">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="feedback__slide">
+            <div class="feedback__image">
+              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+            </div>
+            <article class="feedback__slide-content">
+              <blockquote class="feedback__content">
+                <cite>Алиса Фридман</cite>
+                <div class="feedback__programme">
+                  <p>Программа:</p>
+                  <p>Арт-Тель, февраль-сентябрь 2019</p>
+                </div>
+                <q>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+                  Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</q>
+                <br>
+                <q>С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная
+                  поддержка
+                  по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой
+                  курс
+                  а еще и поездки всей программой в разные уголки страны. </q>
+                <a href="#">Читать подробнее</a>
+              </blockquote>
+              <div class="feedback__navigation">
+                <span>5 / 6</span>
+                <div class="feedback__controls">
+                  <button class="feedback__button feedback__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий отзыв</span>
+                  </button>
+                  <button class="feedback__button feedback__button--next" type="button">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="feedback__social-media-facebook">
+                      <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-twitter">
+                      <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-instagram">
+                      <a href="#">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="feedback__slide">
+            <div class="feedback__image">
+              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+            </div>
+            <article class="feedback__slide-content">
+              <blockquote class="feedback__content">
+                <cite>Виктория Лившис</cite>
+                <div class="feedback__programme">
+                  <p>Программа:</p>
+                  <p>Арт-Тель, февраль-сетнябрь 2017</p>
+                </div>
+                <q>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+                  Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</q>
+                <br>
+                <q>С первой же встречи тебе дают понять - что ты не один, у тебя есть практически круглосуточная
+                  поддержка
+                  по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи, языковой
+                  курс
+                  а еще и поездки всей программой в разные уголки страны. </q>
+                <a href="#">Читать подробнее</a>
+              </blockquote>
+              <div class="feedback__navigation">
+                <span>6 / 6</span>
+                <div class="feedback__controls">
+                  <button class="feedback__button feedback__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий отзыв</span>
+                  </button>
+                  <button class="feedback__button feedback__button--next" type="button">
+                    <span class="visually-hidden">Следующий отзыв</span>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="feedback__social-media-facebook">
+                      <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-twitter">
+                      <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feedback__social-media-instagram">
+                      <a href="#">
+                        <span class="visually-hidden">Instagram</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-    </div></section>
+    </section>
+    <section class="info">
+      <div class="info__container">
+        <h2>Узнать подробности</h2>
+        <div class="info__location">
+          <p>Ваш город:</p>
+          <p>Новосибирск</p>
+        </div>
+        <div class="info__content">
+          <div class="info__curator">
+            <div class="info__curator-photo">
+              <img src="img/curator-avatar.png">
+            </div>
+            <div class="info__curator-info">
+              <div class="info__curator-name">
+                <p>Ваш куратор:</p>
+                <p>Анна Горелик</p>
+              </div>
+              <address>Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</address>
+              <ul>
+                <li>
+                  <div class="info__curator-facebook">
+                    <a href="#">
+                      <span class="visually-hidden">Facebook</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info__curator-whatsapp">
+                    <a href="#">
+                      <span class="visually-hidden">Whatsapp</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info__curator-telegram">
+                    <a href="#">
+                      <span class="visually-hidden">Telegram</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="info__curator-summary">
+              <p>Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с
+                куратором, узнайте подробнее о программах и выберите свою !</p>
+            </div>
+          </div>
+          <div class="info__map">
+            <img src="img/map-desktop.png" width="702" height="448" alt="Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»">
+          </div>
+        </div>
+        <div class="info__questions">
+          <div class="info__questions-content">
+            <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <p>Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
+          </div>
+          <form action="http://echo.htmlacademy.ru" method="POST">
+            <input type="text" id="name3" name="name" placeholder="имя" required="">
+            <label for="name3">
+              <span class="visually-hidden">Введите своё имя</span>
+            </label>
+            <input type="tel" id="number3" name="number" placeholder="телефон" minlength="8" maxlength="13" required="">
+            <label for="number3">
+              <span class="visually-hidden">Введите номер Вашего телефона</span>
+            </label>
+            <button type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <section class="modal-call-request">
     <div class="modal-call-request__window">
       <h1 class="modal-call-request__title">Заказать звонок</h1>
       <p>Оставьте ваши контактные данные, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение рабочего дня и&nbsp;обязательно
         поможем найти ответ на&nbsp;ваш вопрос!</p>
-      <form action="http://echo.htmlacademy.ru" method="GET">
+      <form action="http://echo.htmlacademy.ru" method="POST">
         <input type="text" id="name" name="name" placeholder="Имя" required="">
         <label for="name">
           <span class="visually-hidden">Введите своё имя</span>
@@ -385,7 +759,6 @@
       </button>
     </div>
   </section>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
 </body>

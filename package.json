@@ -24,8 +24,7 @@
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "svg4everybody": "^2.1.9",
-    "swiper": "^6.3.5"
+    "svg4everybody": "^2.1.9"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

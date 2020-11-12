@@ -1,0 +1,82 @@
+.info {
+  margin-top: 90px;
+}
+
+.info__container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.info__container h2 {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+  margin: 0;
+  margin-left: 8%;
+  padding-top: 15px;
+}
+
+.info__content {
+  display: flex;
+}
+
+.info__curator {
+  margin-left: 8%;
+}
+
+.info__location {
+  display: flex;
+  margin-top: 49px;
+  margin-left: 8%;
+}
+
+.info__location p {
+  font-family: $firasans;
+  font-size: 15px;
+  line-height: 22px;
+  color: $black;
+  opacity: 0.74;
+  margin: 0;
+  padding-left: 1.8%;
+  padding-right: 1.3%;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 18px;
+    background-image: url("../img/gps_location.svg");
+    position: absolute;
+    left: 5px;
+    top: 1px;
+  }
+}
+
+.info__location p + p {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 0;
+  letter-spacing: -1px;
+  border-bottom: 1px dashed $blue;
+  padding-bottom: 0px;
+  padding-right: 2px;
+  position: relative;
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 15px;
+    background-image: url("../img/gps.svg");
+    position: absolute;
+    top: 5px;
+    right: -25px;
+  }
+}

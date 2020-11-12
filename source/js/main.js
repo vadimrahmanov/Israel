@@ -17,6 +17,7 @@
   var programmeContent = document.querySelectorAll('.all-programmes__tabs-content-item');
   var faqItem = document.querySelectorAll('.faq__content li');
   var faqText = document.querySelectorAll('.faq__content p');
+  var feedbackSlide = document.querySelectorAll('.feedback__slide');
   var storageName = '';
   var storagePhone = '';
   var storageEnqPhone = '';
@@ -115,6 +116,10 @@
       evt.currentTarget.classList.toggle('faq-visible-li');
       evt.currentTarget.querySelector('p').classList.toggle('faq-visible');
     });
+  }
+
+  for (var f = 0; f < feedbackSlide.length; f++) {
+    feedbackSlide[f].classList.add('feedback-hidden');
   }
 
   for (var j = 0; j < programmeContent.length; j++) {
