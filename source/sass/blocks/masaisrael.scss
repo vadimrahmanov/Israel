@@ -75,6 +75,14 @@
     top: 18px;
     left: 40px;
   }
+
+  &:hover {
+    background: $yellow-gradient-hover;
+  }
+
+  &:active {
+    background: $yellow-gradient-active;
+  }
 }
 
 @media (max-width: $tablet) {

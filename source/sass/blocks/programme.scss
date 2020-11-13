@@ -53,6 +53,15 @@
   top: 227px;
   transform: translateX(-50%);
   background-color: transparent;
+  cursor: $pointer;
+
+  &:hover {
+    background-image: url("../img/play-btn-hover.svg");
+  }
+
+  &:active {
+    background-image: url("../img/play-btn-active.svg");
+  }
 }
 
 @media (max-width: $tablet) {

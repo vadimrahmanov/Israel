@@ -55,6 +55,14 @@
     border-bottom: 1px dashed $black;
     letter-spacing: -0.87px;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .header__container h1 {

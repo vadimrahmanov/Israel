@@ -51,7 +51,15 @@
   margin: 0;
   padding-left: 30px;
   padding-right: 75px;
-  cursor: default;
+  cursor: $pointer;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .faq__content ol {
@@ -91,6 +99,7 @@
     width: 19px;
     height: 12px;
     background-repeat: no-repeat;
+    cursor: $pointer;
   }
 }
 
@@ -124,9 +133,9 @@
   display: block;
 }
 
-.faq-visible-li {
+li.faq-visible-li {
   &::after {
-    background-image: url("../img/arrow_up.svg") !important;
+    background-image: url("../img/arrow_up.svg");
   }
 }
 

@@ -57,7 +57,6 @@
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
-  opacity: 0.5;
   width: 360px;
   border: 2px solid #e3e3e3;
   box-sizing: border-box;
@@ -66,6 +65,14 @@
   padding-top: 19px;
   padding-bottom: 16px;
   letter-spacing: -1.1px;
+
+  &:hover {
+    border: 2px solid $yellow;
+  }
+
+  &:valid {
+    border: 2px solid rgba($color: $black, $alpha: 0.5);
+  }
 }
 
 .enquiry__content button {
@@ -81,13 +88,21 @@
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   border-radius: 80px;
   border: none;
-  cursor: pointer;
+  cursor: $pointer;
   position: absolute;
   top: 0;
   right: 0;
   letter-spacing: -1px;
   padding-bottom: 18px;
   padding-top: 21px;
+
+  &:hover {
+    background: $yellow-gradient-hover;
+  }
+
+  &:active {
+    background: $yellow-gradient-active;
+  }
 }
 
 .enquiry__container img {

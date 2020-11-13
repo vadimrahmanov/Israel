@@ -93,7 +93,15 @@
   padding-bottom: 18px;
   margin: 0 auto;
   margin-top: 27px;
-  cursor: pointer;
+  cursor: $pointer;
+
+  &:hover {
+    background: $yellow-gradient-hover;
+  }
+
+  &:active {
+    background: $yellow-gradient-active;
+  }
 }
 
 .modal-call-success__close {

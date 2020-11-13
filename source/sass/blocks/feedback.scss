@@ -100,6 +100,14 @@
   color: $blue;
   padding-top: 16px;
   display: block;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .feedback__navigation {
@@ -157,7 +165,7 @@
 
 .feedback__social-media-twitter a {
   width: 22px;
-  height: 18px;
+  height: 17px;
   background-image: url("../img/twitter.svg");
 }
 

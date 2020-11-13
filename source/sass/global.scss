@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  cursor: url('../img/cursor.png'), auto;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: $pointer;
 }
 
 .visually-hidden {

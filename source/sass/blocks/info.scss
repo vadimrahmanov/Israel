@@ -1,5 +1,14 @@
 .info {
   margin-top: 90px;
+  padding-bottom: 73px;
+  background-image: url("../img/curator_bg.png");
+  background-repeat: no-repeat;
+  background-position: center -75px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/curator_bg@2x.png");
+    background-size: 1366px 811px;
+  }
 }
 
 .info__container {
@@ -22,10 +31,23 @@
 
 .info__content {
   display: flex;
+  align-items: flex-start;
+}
+
+.info__curator-photo {
+  height: 112px;
 }
 
 .info__curator {
-  margin-left: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8.02%;
+  margin-top: 38px;
+}
+
+.info__curator-info {
+  margin-left: 4.5%;
+  margin-top: 2px;
 }
 
 .info__location {
@@ -41,7 +63,7 @@
   color: $black;
   opacity: 0.74;
   margin: 0;
-  padding-left: 1.8%;
+  padding-left: 23px;
   padding-right: 1.3%;
   position: relative;
 
@@ -78,5 +100,379 @@
     position: absolute;
     top: 5px;
     right: -25px;
+  }
+}
+
+.info__curator-name {
+  display: flex;
+}
+
+.info__curator-name p {
+  font-family: $firasans;
+  font-size: 15px;
+  line-height: 22px;
+  color: $blue;
+  margin: 0;
+}
+
+.info__curator-name p + p {
+  color: $black;
+  opacity: 0.74;
+  padding-left: 9px;
+}
+
+.info__curator-info address {
+  font-family: $firasans;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: $black;
+  opacity: 0.74;
+  padding-top: 12px;
+  width: 264px;
+}
+
+.info__curator-info ul {
+  @include list-reset;
+  display: flex;
+  align-items: baseline;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.info__curator-info li {
+  padding-left: 4px;
+  padding-right: 15px;
+}
+
+.info__curator-facebook a,
+.info__curator-whatsapp a,
+.info__curator-telegram a {
+  display: block;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.info__curator-facebook a {
+  width: 10px;
+  height: 20px;
+  background-image: url("../img/facebook.svg");
+}
+
+.info__curator-whatsapp a {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/whatsapp.svg");
+}
+
+.info__curator-telegram a {
+  width: 22px;
+  height: 18px;
+  background-image: url("../img/telegram.svg")
+}
+
+.info__curator-summary {
+  padding-top: 32px;
+}
+
+.info__curator-summary p {
+  font-family: $firasans;
+  font-size: 17px;
+  line-height: 29px;
+  color: $black;
+  opacity: 0.87;
+  width: 480px;
+  margin: 0;
+}
+
+.info__map {
+  width: 79.4%;
+  height: 100%;
+  margin-top: -8.4%;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 28px;
+    background-image: url("../img/map_pin.png");
+    position: absolute;
+    top: 50.6%;
+    right: 23.6%;
+  }
+}
+
+.info__map img {
+  width: 100%;
+  height: 100%;
+}
+
+.info__questions {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 8%;
+}
+
+.info__questions-content p {
+  font-family: $firasans;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: $black;
+  opacity: 0.87;
+  width: 328px;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.info__questions-content p + p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: $black;
+  opacity: 0.5;
+  width: 364px;
+  padding-top: 13px;
+}
+
+.info__questions form {
+  display: flex;
+  align-items: flex-start;
+  width: 61%;
+  margin-left: 1.2%;
+  margin-right: 2%;
+}
+
+.info__questions input {
+  font-family: $firasans;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+  width: 32.6%;
+  border: 2px solid #e3e3e3;
+  box-sizing: border-box;
+  border-radius: 80px;
+  padding-left: 40px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  margin-right: 3.14%;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    border: 2px solid $yellow;
+  }
+
+  &:valid {
+    border: 2px solid rgba($color: $black, $alpha: 0.5);
+  }
+}
+
+.info__questions button {
+  font-family: $firasans;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  width: 28.1%;
+  padding-left: 5px;
+  letter-spacing: -1px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+  background: $yellow-gradient;
+  border-radius: 80px;
+  border: none;
+  cursor: $pointer;
+
+  &:hover {
+    background: $yellow-gradient-hover;
+  }
+
+  &:active {
+    background: $yellow-gradient-active;
+  }
+}
+
+@media (max-width: $tablet) {
+  .info {
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  .info__container h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .info__location {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .info__location p {
+    padding-left: 65px;
+
+    &::before {
+      left: 44px;
+    }
+  }
+
+  .info__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__curator {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 6px;
+  }
+
+  .info__map {
+    margin-top: 35px;
+  }
+
+  .info__questions {
+    margin-left: 0;
+    margin-top: 14px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info__questions-content {
+    margin-bottom: 30px;
+  }
+
+  .info__questions form {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .info__questions input {
+    margin-right: 0;
+    width: 65%;
+    margin-bottom: 20px;
+  }
+
+  .info__questions button {
+    width: 55%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .info {
+    margin-top: 52px;
+  }
+
+  .info__container h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .info__location {
+    margin-top: 25px;
+    justify-content: flex-start;
+  }
+
+  .info__location p {
+    padding-left: 38px;
+    padding-right: 16px;
+
+    &::before {
+      left: 20px;
+    }
+  }
+
+  .info__location p + p {
+    padding-top: 1px;
+  }
+
+  .info__curator {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 37px;
+    margin-left: 5%;
+  }
+
+  .info__curator-info {
+    margin-left: 0;
+    margin-top: 17px;
+  }
+
+  .info__curator-info address {
+    width: 91%;
+  }
+
+  .info__curator-info ul {
+    margin-top: 16px;
+  }
+
+  .info__curator-summary {
+    padding-top: 36px;
+  }
+
+  .info__curator-summary p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 89%;
+  }
+
+  .info__questions-content p {
+    width: 288px;
+  }
+
+  .info__questions-content p+p {
+    width: 288px;
+  }
+
+  .info__map {
+    margin-top: 39px;
+    width: 324px;
+    height: 420px;
+    left: -3px;
+
+    &::before {
+      top: 47.6%;
+      right: 21.6%;
+      width: 26px;
+      height: 40px;
+      background-image: url("../img/map_pin-mobile.png");
+    }
+  }
+
+  .info__map img {
+    width: 320px;
+    height: 420px;
+  }
+
+  .info__questions-content p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 11px;
+  }
+
+  .info__questions form {
+    margin-top: 4px;
+  }
+
+  .info__questions input {
+    width: 288px;
+    margin-bottom: 8px;
+  }
+
+  .info__questions button {
+    width: 264px;
+    margin-top: 16px;
   }
 }

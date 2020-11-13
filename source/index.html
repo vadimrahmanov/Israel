@@ -48,7 +48,11 @@
           программ (60&nbsp;на русском) и возможность стажировки в Израиле. В&nbsp;течение освоения программ
           предусмотрен грант от 4200 до 8400$.</p>
         <div class="programme__video">
-          <img class="programme__video-player" src="img/video.png" width="870" height="460">
+          <picture>
+            <source type="image/webp" srcset="img/video.webp 1x">
+            <img class="programme__video-player" src="img/video.png" width="870" height="460" alt="Видео">
+          </picture>
+          <!--Размер без ретины 868x460, с ретиной 1736x920-->
           <button class="programme__video-play-btn">
             <span class="visually-hidden">Воспроизвести видео</span>
           </button>
@@ -161,20 +165,28 @@
           <h2>Хочу поехать!</h2>
           <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
           <form action="http://echo.htmlacademy.ru">
-            <input type="tel" id="number2" name="number" placeholder="Телефон" minlength="8" maxlength="13" required>
+            <input class="phone_mask" type="tel" id="number2" name="number" placeholder="Телефон" minlength="8" maxlength="13" required>
             <label for="number2">
               <span class="visually-hidden">Введите номер Вашего телефона</span>
             </label>
             <button type="submit">Перезвоните мне</button>
           </form>
         </div>
-        <img src="img/enquiry.png" width="818" height="594" alt="Девушка стоит на горе обернувшись во флаг Израиля">
+        <picture>
+          <source type="image/webp" srcset="img/enquiry.webp 1x">
+          <img src="img/enquiry.png" width="818" height="594" alt="Девушка стоит на горе обернувшись во флаг Израиля">
+        </picture>
+        <!--Размер без ретины 818x594, с ретиной 1636x1188-->
       </div>
     </section>
     <section class="requirements">
       <div class="requirements__container">
         <div class="requirements__image">
-          <img src="img/requirements.png" width="581" height="707" alt="Парень стоит рядом с девушкой">
+          <picture>
+            <source type="image/webp" srcset="img/requirements.webp 1x">
+            <img src="img/requirements.png" width="581" height="707" alt="Парень стоит рядом с девушкой">
+          </picture>
+          <!--Размер без ретины 581x707, с ретиной 1162x1414-->
         </div>
         <div class="requirements__content">
           <h2>Как поехать</h2>
@@ -207,23 +219,43 @@
           богатой культурно-исторической жизнью Израиля и его жителей.</p>
         <div class="israel__slider owl-carousel">
           <div class="israel__slide israel__slide--slide1">
-            <img src="img/1.png" width="482" height="732" alt="Изображение синагоги">
+            <picture>
+              <source type="image/webp" srcset="img/1.webp 1x">
+              <img src="img/1.png" width="482" height="732" alt="Изображение синагоги">
+            </picture>
+            <!--Размер без ретины 482x732, с ретиной 964x1464-->
             <p>Экскурсии по Израилю и&nbsp;знакомство с его историей</p>
           </div>
           <div class="israel__slide israel__slide--slide2">
-            <img src="img/2.png" width="211" height="318" alt="Парень сидит и изучает иврит">
+            <picture>
+              <source type="image/webp" srcset="img/2.webp 1x">
+              <img src="img/2.png" width="211" height="318" alt="Парень сидит и изучает иврит">
+            </picture>
+            <!--Размер без ретины 211x318, с ретиной 422x636-->
             <p>Изучение иврита</p>
           </div>
           <div class="israel__slide israel__slide--slide3">
-            <img src="img/3.png" width="411" height="318" alt="Парень помогает разрбраться коллеге с видеоредактором">
+            <picture>
+              <source type="image/webp" srcset="img/3.webp 1x">
+              <img src="img/3.png" width="411" height="318" alt="Парень помогает разрбраться коллеге с видеоредактором">
+            </picture>
+            <!--Размер без ретины 411x318, с ретиной 822x636-->
             <p>Обучение современным навыкам и профессиям</p>
           </div>
           <div class="israel__slide israel__slide--slide4">
-            <img src="img/4.png" width="411" height="318" alt="Парень с двумя девушками">
+            <picture>
+              <source type="image/webp" srcset="img/4.webp 1x">
+              <img src="img/4.png" width="411" height="318" alt="Парень с двумя девушками">
+            </picture>
+            <!--Размер без ретины 411x318, с ретиной 822x636-->
             <p>Совместные творческие проекты с израильской молодёжью</p>
           </div>
           <div class="israel__slide israel__slide--slide5">
-            <img src="img/5.png" width="214" height="318" alt="Парень в шапке стоит на горе на закате солнца">
+            <picture>
+              <source type="image/webp" srcset="img/5.webp 1x">
+              <img src="img/5.png" width="214" height="318" alt="Парень в шапке стоит на горе на закате солнца">
+            </picture>
+            <!--Размер без ретины 214x318, с ретиной 428x636-->
             <p>Развитие лидерства</p>
           </div>
         </div>
@@ -301,7 +333,11 @@
           </ol>
         </div>
         <div class="faq__image">
-          <img src="img/faq.png" srcset="img/faq@2x.png 2x" width="645" height="803">
+          <picture>
+            <source type="image/webp" srcset="img/faq.webp 1x">
+            <img src="img/faq.png" width="645" height="803" alt="Парень с девушкой смеются">
+          </picture>
+          <!--Размер без ретины 645x803, с ретиной 1290x1606-->
         </div>
       </div>
     </section>
@@ -311,7 +347,11 @@
         <div class="feedback__slider">
           <div class="feedback__slide">
             <div class="feedback__image">
-              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+              <picture>
+                <source type="image/webp" srcset="img/feedback-photo.webp 1x">
+                <img src="img/feedback-photo.png" width="364" height="480" alt="Фотография Марии Линдерман">
+              </picture>
+              <!--Размер без ретины 364x480, с ретиной 728x960-->
             </div>
             <article class="feedback__slide-content">
               <blockquote class="feedback__content">
@@ -368,7 +408,11 @@
           </div>
           <div class="feedback__slide">
             <div class="feedback__image">
-              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+              <picture>
+                <source type="image/webp" srcset="img/feedback-photo.webp 1x">
+                <img src="img/feedback-photo.png" width="364" height="480" alt="Фотография Анны Гольдман">
+              </picture>
+              <!--Размер без ретины 364x480, с ретиной 728x960-->
             </div>
             <article class="feedback__slide-content">
               <blockquote class="feedback__content">
@@ -425,7 +469,11 @@
           </div>
           <div class="feedback__slide feedback-active">
             <div class="feedback__image">
-              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+              <picture>
+                <source type="image/webp" srcset="img/feedback-photo.webp 1x">
+                <img src="img/feedback-photo.png" width="364" height="480" alt="Фотография Ольги Михайловны">
+              </picture>
+              <!--Размер без ретины 364x480, с ретиной 728x960-->
             </div>
             <article class="feedback__slide-content">
               <blockquote class="feedback__content">
@@ -482,7 +530,11 @@
           </div>
           <div class="feedback__slide">
             <div class="feedback__image">
-              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+              <picture>
+                <source type="image/webp" srcset="img/feedback-photo.webp 1x">
+                <img src="img/feedback-photo.png" width="364" height="480" alt="Фотография Сары Зельцерман">
+              </picture>
+              <!--Размер без ретины 364x480, с ретиной 728x960-->
             </div>
             <article class="feedback__slide-content">
               <blockquote class="feedback__content">
@@ -539,7 +591,11 @@
           </div>
           <div class="feedback__slide">
             <div class="feedback__image">
-              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+              <picture>
+                <source type="image/webp" srcset="img/feedback-photo.webp 1x">
+                <img src="img/feedback-photo.png" width="364" height="480" alt="Фотография Алисы Фридман">
+              </picture>
+              <!--Размер без ретины 364x480, с ретиной 728x960-->
             </div>
             <article class="feedback__slide-content">
               <blockquote class="feedback__content">
@@ -596,7 +652,11 @@
           </div>
           <div class="feedback__slide">
             <div class="feedback__image">
-              <img src="img/feedback-photo.png" srcset="img/feedback-photo@2x.png" width="364" height="480">
+              <picture>
+                <source type="image/webp" srcset="img/feedback-photo.webp 1x">
+                <img src="img/feedback-photo.png" width="364" height="480" alt="Фотография Виктории Лившис">
+              </picture>
+              <!--Размер без ретины 364x480, с ретиной 728x960-->
             </div>
             <article class="feedback__slide-content">
               <blockquote class="feedback__content">
@@ -664,7 +724,11 @@
         <div class="info__content">
           <div class="info__curator">
             <div class="info__curator-photo">
-              <img src="img/curator-avatar.png">
+              <picture>
+                <source type="image/webp" srcset="img/curator-avatar.webp 1x">
+                <img src="img/curator-avatar.png" width="112" height="112" alt="Фотография куратора проекта">
+              </picture>
+              <!--Размер без ретины 112x112, с ретиной 224x224-->
             </div>
             <div class="info__curator-info">
               <div class="info__curator-name">
@@ -697,13 +761,17 @@
               </ul>
             </div>
             <div class="info__curator-summary">
-              <p>Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с
-                куратором, узнайте подробнее о программах и выберите свою !</p>
+              <p>Куратор является опытным специалистом агентства Сохнут и&nbsp;знает о проекте «Маса» всё! Свяжитесь с
+                куратором, узнайте&nbsp;подробнее о программах и выберите свою !</p>
             </div>
           </div>
           <div class="info__map">
-            <img src="img/map-desktop.png" width="702" height="448"
+            <picture>
+              <source type="image/webp" srcset="img/map-desktop.webp 1x">
+              <img src="img/map-desktop.png" width="702" height="448"
               alt="Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»">
+            </picture>
+            <!--Размер без ретины 702x448, с ретиной 1404x896-->
           </div>
         </div>
         <div class="info__questions">
@@ -716,7 +784,8 @@
             <label for="name3">
               <span class="visually-hidden">Введите своё имя</span>
             </label>
-            <input type="tel" id="number3" name="number" placeholder="телефон" minlength="8" maxlength="13" required>
+            <input class="phone_mask" type="text" id="number3" name="number" placeholder="телефон" minlength="8"
+              maxlength="13" required>
             <label for="number3">
               <span class="visually-hidden">Введите номер Вашего телефона</span>
             </label>
@@ -725,6 +794,38 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <picture>
+          <source type="image/webp" srcset="img/masa-footer.webp 1x">
+          <img src="img/masa-footer.png" width="85" height="27" alt="Логотип Масы">
+        </picture>
+        <p>Copyright someDesignCompany ©2019</p>
+        <ul>
+          <li>
+            <div class="footer__facebook">
+              <a href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="footer__twitter">
+              <a href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="footer__instagram">
+              <a href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </main>
   <section class="modal-call-request">
     <div class="modal-call-request__window">
@@ -736,7 +837,7 @@
         <label for="name">
           <span class="visually-hidden">Введите своё имя</span>
         </label>
-        <input type="tel" id="number" name="number" placeholder="Телефон" minlength="8" maxlength="13" required>
+        <input class="phone_mask" type="tel" id="number" name="number" placeholder="Телефон" minlength="8" maxlength="13" required>
         <label for="number">
           <span class="visually-hidden">Введите номер Вашего телефона</span>
         </label>
@@ -764,5 +865,4 @@
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

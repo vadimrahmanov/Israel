@@ -17,21 +17,24 @@
   var programmeContent = document.querySelectorAll('.all-programmes__tabs-content-item');
   var faqItem = document.querySelectorAll('.faq__content li');
   var faqText = document.querySelectorAll('.faq__content p');
+  var curatorForm = document.querySelector('.info__questions form');
+  var curatorName = curatorForm.querySelector('#name3');
+  var curatorPhone = curatorForm.querySelector('#number3');
   var feedbackSlide = document.querySelectorAll('.feedback__slide');
   var storageName = '';
   var storagePhone = '';
   var storageEnqPhone = '';
+  var storageCuratorName = '';
+  var storageCuratorPhone = '';
 
   try {
     storageName = localStorage.getItem('name');
     storagePhone = localStorage.getItem('phone');
     storageEnqPhone = localStorage.getItem('enqPhone');
+    storageCuratorName = localStorage.getItem('curName');
+    storageCuratorPhone = localStorage.getItem('curPhone');
   } catch (err) {
     isStorageSupport = false;
-  }
-
-  if (storageEnqPhone) {
-    enquiryNumber.value = storageEnqPhone;
   }
 
   function openPopup(modalWindow) {
@@ -101,10 +104,31 @@
     }
   });
 
+  if (storageEnqPhone) {
+    enquiryNumber.value = storageEnqPhone;
+  }
+
   enquiryForm.addEventListener('submit', function (evt) {
     evt.preventDefault();
     if (isStorageSupport) {
       localStorage.setItem('enqPhone', enquiryNumber.value);
+    }
+    onSuccess();
+  });
+
+  if (storageCuratorName) {
+    curatorName.value = storageCuratorName;
+  }
+
+  if (storageCuratorPhone) {
+    curatorPhone.value = storageCuratorPhone;
+  }
+
+  curatorForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    if (isStorageSupport) {
+      localStorage.setItem('curName', curatorName.value);
+      localStorage.setItem('curPhone', curatorPhone.value);
     }
     onSuccess();
   });
@@ -170,4 +194,7 @@
     // eslint-disable-next-line no-unused-vars
     var tabs = new Tabs();
   });
+
+  // eslint-disable-next-line no-undef
+  svg4everybody();
 })();

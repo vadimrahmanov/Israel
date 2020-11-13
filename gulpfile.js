@@ -1,4 +1,4 @@
-"use strict";
+/*eslint-disable */
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var concat = require("gulp-concat");
+var babel = require("gulp-babel");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -88,6 +89,14 @@ gulp.task("scripts", function() {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("babel", function () {
+  return gulp.src("source/js/main.js")
+    .pipe(babel({
+      presets: ["@babel/preset-env"]
+    }))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -105,5 +114,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "babel", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
