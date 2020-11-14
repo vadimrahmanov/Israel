@@ -20,12 +20,12 @@
   var curatorForm = document.querySelector('.info__questions form');
   var curatorName = curatorForm.querySelector('#name3');
   var curatorPhone = curatorForm.querySelector('#number3');
-  var feedbackSlide = document.querySelectorAll('.feedback__slide');
   var storageName = '';
   var storagePhone = '';
   var storageEnqPhone = '';
   var storageCuratorName = '';
   var storageCuratorPhone = '';
+  var $ = window.jQuery;
 
   try {
     storageName = localStorage.getItem('name');
@@ -142,10 +142,6 @@
     });
   }
 
-  for (var f = 0; f < feedbackSlide.length; f++) {
-    feedbackSlide[f].classList.add('feedback-hidden');
-  }
-
   for (var j = 0; j < programmeContent.length; j++) {
     programmeContent[j].classList.add('programme-content-hide');
   }
@@ -190,10 +186,64 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', ()=> {
+  document.addEventListener('DOMContentLoaded', () => {
     // eslint-disable-next-line no-unused-vars
     var tabs = new Tabs();
   });
+
+  var $homeSlider = $('.israel__slider');
+
+  $(window).resize(function () {
+    showHomeSlider();
+  });
+
+  function showHomeSlider() {
+    if ($homeSlider.data('owlCarousel') !== 'undefined') {
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        initialHomeSlider();
+      } else {
+        destroyHomeSlider();
+      }
+    }
+  }
+  showHomeSlider();
+
+  function initialHomeSlider() {
+    $homeSlider.addClass('owl-carousel').owlCarousel({
+      items: 1,
+      loop: false,
+      autoplay: false,
+      smartSpeed: 250
+    });
+  }
+
+  function destroyHomeSlider() {
+    $homeSlider.trigger('destroy.owl.carousel').removeClass('owl-carousel');
+  }
+
+  var owlFeedback = $('.feedback__slider');
+  owlFeedback.owlCarousel();
+  // Go to the next item
+  $('.feedback__button--next').click(function () {
+    owlFeedback.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('.feedback__button--prev').click(function () {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owlFeedback.trigger('prev.owl.carousel', [300]);
+  });
+
+  owlFeedback.owlCarousel({
+    onChange: onChange
+  });
+
+  function onChange(event) {
+    // eslint-disable-next-line no-unused-vars
+    var items = event.item.count;
+    // eslint-disable-next-line no-unused-vars
+    var item = event.item.index;
+  }
 
   // eslint-disable-next-line no-undef
   svg4everybody();

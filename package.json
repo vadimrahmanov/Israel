@@ -30,7 +30,7 @@
     "svg4everybody": "^2.1.9"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
+    "editorconfig": "editorconfig-cli -j glob.json",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
