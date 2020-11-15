@@ -1,5 +1,5 @@
 .info {
-  margin-top: 98px;
+  margin-top: 93px;
   padding-bottom: 73px;
   background-image: url("../img/curator_bg.png");
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@
   padding-left: 0;
   letter-spacing: -1px;
   border-bottom: 1px dashed $blue;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-right: 2px;
   position: relative;
 
@@ -171,7 +171,7 @@
 .info__curator-telegram a {
   width: 22px;
   height: 18px;
-  background-image: url("../img/telegram.svg")
+  background-image: url("../img/telegram.svg");
 }
 
 .info__curator-summary {
@@ -256,9 +256,9 @@
   border: 2px solid #e3e3e3;
   box-sizing: border-box;
   border-radius: 80px;
-  padding-left: 40px;
-  padding-top: 19px;
-  padding-bottom: 16px;
+  padding-left: 5%;
+  padding-top: 17px;
+  padding-bottom: 17px;
   margin-right: 3.14%;
 
   &::placeholder {
@@ -281,7 +281,7 @@
   line-height: 20px;
   color: $white;
   text-transform: uppercase;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   width: 28.1%;
   padding-left: 5px;
   letter-spacing: -1px;
@@ -372,7 +372,7 @@
 
 @media (max-width: $mobile) {
   .info {
-    margin-top: 52px;
+    margin-top: 30px;
   }
 
   .info__container h2 {
@@ -429,10 +429,13 @@
   }
 
   .info__questions-content p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 11px;
     width: 288px;
   }
 
-  .info__questions-content p+p {
+  .info__questions-content p + p {
     width: 288px;
   }
 
@@ -454,12 +457,6 @@
   .info__map img {
     width: 320px;
     height: 420px;
-  }
-
-  .info__questions-content p {
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 11px;
   }
 
   .info__questions form {

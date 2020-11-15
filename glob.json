@@ -3,8 +3,7 @@
     "./*.html",
     "./*.json",
     "./img/**/*.svg",
-    "./js/main.js",
-    "./less/**/*.less",
+    "./js/vendors/*.js",
     "./sass/**/*.{sass,scss}",
     "./postcss/**/*.{css,pcss}"
   ]

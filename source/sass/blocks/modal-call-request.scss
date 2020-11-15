@@ -195,6 +195,7 @@
   right: 32px;
   background-image: url("../img/close-btn.svg");
   background-color: $white;
+  background-repeat: no-repeat;
   border: none;
 }
 
@@ -220,7 +221,7 @@
     height: 100vh;
   }
 
-  .modal-call-request__window h1 {
+  .modal-call-request__window h2 {
     font-size: 24px;
     line-height: 29px;
     text-align: center;

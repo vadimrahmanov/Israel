@@ -64,31 +64,31 @@
         <h2>Программы</h2>
         <div class="all-programmes__tabs">
           <div class="all-programmes__tabs-controls">
-            <button class="all-programmes__tabs-btn all-programmes__tabs-btn--common">
+            <button class="all-programmes__tabs-btn">
               <svg class="all-programmes__icon all-programmes__icon--common" width="28" height="33">
                 <use xlink:href="img/sprite_auto.svg#common"></use>
               </svg>
               Общие
             </button>
-            <button class="all-programmes__tabs-btn all-programmes__tabs-btn--academic programme-btn-current">
+            <button class="all-programmes__tabs-btn programme-btn-current">
               <svg class="all-programmes__icon all-programmes__icon--academic" width="36" height="35">
                 <use xlink:href="img/sprite_auto.svg#academic"></use>
               </svg>
               Академические
             </button>
-            <button class="all-programmes__tabs-btn all-programmes__tabs-btn--internships">
+            <button class="all-programmes__tabs-btn">
               <svg class="all-programmes__icon all-programmes__icon--internship" width="32" height="25">
                 <use xlink:href="img/sprite_auto.svg#internship"></use>
               </svg>
               Стажировки
             </button>
-            <button class="all-programmes__tabs-btn all-programmes__tabs-btn--voluntery">
+            <button class="all-programmes__tabs-btn">
               <svg class="all-programmes__icon all-programmes__icon--voluntery" width="32" height="29">
                 <use xlink:href="img/sprite_auto.svg#voluntery"></use>
               </svg>
               Волонтёрство
             </button>
-            <button class="all-programmes__tabs-btn all-programmes__tabs-btn--religion">
+            <button class="all-programmes__tabs-btn">
               <svg class="all-programmes__icon all-programmes__icon--religion" width="23" height="25">
                 <use xlink:href="img/sprite_auto.svg#religic"></use>
               </svg>
@@ -459,7 +459,7 @@
             </div>
           </li>
           <li>
-            <div class="feedback__slide active">
+            <div class="feedback__slide">
               <div class="feedback__image">
                 <picture>
                   <source type="image/webp" srcset="img/feedback-photo.webp 1x">
@@ -684,6 +684,7 @@
           </li>
         </ul>
         <div class="feedback__controls">
+          <span id="counter"></span>
           <button class="feedback__button feedback__button--prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>

@@ -12,6 +12,7 @@
 .feedback__container {
   max-width: 1366px;
   margin: 0 auto;
+  position: relative;
 }
 
 .feedback__container h2 {
@@ -65,6 +66,7 @@
   display: flex;
   margin-top: 9px;
   margin-bottom: 31px;
+
   p {
     font-family: $firasans;
     font-size: 15px;
@@ -135,9 +137,21 @@
 .feedback__controls {
   display: flex;
   justify-content: space-between;
-  margin-left: 41%;
-  width: 43px;
-  margin-top: -26px;
+  margin-left: 36.7%;
+  width: 102px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.feedback__controls span {
+  font-family: $firasans;
+  font-size: 17px;
+  line-height: 25px;
+  color: $black;
+  opacity: 0.5;
+  padding-right: 8px;
 }
 
 .feedback__slide-content ul {
@@ -189,6 +203,9 @@
   background-color: transparent;
   background-repeat: no-repeat;
   opacity: 0.2;
+  position: relative;
+  bottom: -2px;
+  cursor: $pointer;
 
   &:hover {
     opacity: 1;
@@ -221,7 +238,7 @@
 
 @media (max-width: $mobile) {
   .feedback {
-    margin-top: 69px;
+    margin-top: 59px;
     background-image: url("../img/feedback_bg-mobile.png");
     background-position: right 553px;
 
@@ -287,8 +304,10 @@
 
   .feedback__controls {
     position: absolute;
-    right: 33.3%;
-    top: 15px;
+    left: 51%;
+    transform: translateX(-51%);
+    top: 419px;
+    margin-left: 0;
   }
 
   .feedback__slide-content ul {

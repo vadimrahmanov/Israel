@@ -2,6 +2,7 @@
 /* eslint-env es6 */
 
 (function () {
+  var body = document.querySelector('body');
   var requestModal = document.querySelector('.modal-call-request');
   var requestOpen = document.querySelector('.header__navigation-list-link--call-request');
   var requestClose = document.querySelector('.modal-call-request__close');
@@ -39,10 +40,12 @@
 
   function openPopup(modalWindow) {
     modalWindow.classList.add('request-open');
+    body.classList.toggle('nav-opened');
   }
 
   function closePopup(modalWindow) {
     modalWindow.classList.remove('request-open');
+    body.classList.toggle('nav-opened');
   }
 
   function onSuccess() {
@@ -191,6 +194,7 @@
     var tabs = new Tabs();
   });
 
+
   var $homeSlider = $('.israel__slider');
 
   $(window).resize(function () {
@@ -222,6 +226,19 @@
   }
 
   var owlFeedback = $('.feedback__slider');
+  owlFeedback.addClass('owl-carousel').owlCarousel({
+    items: 1,
+    loop: false,
+    onInitialized: counter,
+    onTranslated: counter,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    startPosition: 2,
+    slideTransition: '',
+    info: true,
+    dots: false
+  });
   owlFeedback.owlCarousel();
   // Go to the next item
   $('.feedback__button--next').click(function () {
@@ -234,15 +251,17 @@
     owlFeedback.trigger('prev.owl.carousel', [300]);
   });
 
-  owlFeedback.owlCarousel({
-    onChange: onChange
-  });
+  function counter(event) {
+    // eslint-disable-next-line no-unused-vars
+    var element = event.target; // DOM element
+    var items = event.item.count; // Number of items
+    var item = event.item.index + 1; // Position of the current item
 
-  function onChange(event) {
-    // eslint-disable-next-line no-unused-vars
-    var items = event.item.count;
-    // eslint-disable-next-line no-unused-vars
-    var item = event.item.index;
+    if (item > items) {
+      item = item - items;
+    }
+
+    $('#counter').text(item + ' / ' + items);
   }
 
   // eslint-disable-next-line no-undef
