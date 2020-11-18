@@ -244,8 +244,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   owlFeedback.addClass('owl-carousel').owlCarousel({
     items: 1,
     loop: false,
-    onInitialized: counter,
-    onTranslated: counter,
+    onInitialized: showsTotalAndCurrentItem,
+    onTranslated: showsTotalAndCurrentItem,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
@@ -266,7 +266,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     owlFeedback.trigger('prev.owl.carousel', [300]);
   });
 
-  function counter(event) {
+  function showsTotalAndCurrentItem(event) {
     // eslint-disable-next-line no-unused-vars
     var element = event.target; // DOM element
 

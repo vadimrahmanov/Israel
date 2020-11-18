@@ -1,4 +1,6 @@
-/* eslint-disable */
+'use strict';
+(function () {
+  /* eslint-disable */
 /*!
  * jQuery JavaScript Library v3.5.1
  * https://jquery.com/
@@ -10871,3 +10873,5 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
+
+})();

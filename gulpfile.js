@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var concat = require("gulp-concat");
 var babel = require("gulp-babel");
+var concatCss = require('gulp-concat-css');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -25,9 +26,9 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("styles.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/js/vendors/"))
     .pipe(server.stream());
 });
 
@@ -103,7 +104,6 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/*.js",
-    "source/js/vendors/*.css",
     "source//*.ico"
     ], {
       base: "source"
@@ -111,9 +111,18 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("concatcss", function () {
+  return gulp.src([
+    "source/js/vendors/*.css"
+  ])
+    .pipe(concatCss("style.min.css"))
+    .pipe(csso())
+    .pipe(gulp.dest("build/css"))
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "babel", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "babel", "sprite", "html", "concatcss"));
 gulp.task("start", gulp.series("build", "server"));
