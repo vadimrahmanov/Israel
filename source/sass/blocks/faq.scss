@@ -78,6 +78,14 @@
   border-bottom: 1px solid rgba($black, 0.2);
   min-height: 29px;
 
+  &:focus {
+    outline: none;
+
+    h3 {
+      color: $blue;
+    }
+  }
+
   &::before {
     content: counter(requirement-counter);
     font-family: $firasans;

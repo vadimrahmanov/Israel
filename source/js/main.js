@@ -40,12 +40,11 @@
 
   function openPopup(modalWindow) {
     modalWindow.classList.add('request-open');
-    body.classList.toggle('nav-opened');
+    body.classList.add('nav-opened');
   }
 
   function closePopup(modalWindow) {
     modalWindow.classList.remove('request-open');
-    body.classList.toggle('nav-opened');
   }
 
   function onSuccess() {
@@ -68,11 +67,13 @@
   });
 
   requestClose.addEventListener('click', function () {
+    body.classList.remove('nav-opened');
     closePopup(requestModal);
   });
 
   document.addEventListener('keydown', function (evt) {
     if (evt.key === 'Escape') {
+      body.classList.remove('nav-opened');
       closePopup(requestModal);
       closePopup(successModal);
     }
@@ -80,6 +81,7 @@
 
   document.addEventListener('click', function (e) {
     if (e.target === requestModal) {
+      body.classList.remove('nav-opened');
       closePopup(requestModal);
     }
   });
@@ -94,15 +96,18 @@
   });
 
   successCloseBtn.addEventListener('click', function () {
+    body.classList.remove('nav-opened');
     closePopup(successModal);
   });
 
   successOkayBtn.addEventListener('click', function () {
+    body.classList.remove('nav-opened');
     closePopup(successModal);
   });
 
   document.addEventListener('click', function (e) {
     if (e.target === successModal) {
+      body.classList.remove('nav-opened');
       closePopup(successModal);
     }
   });
@@ -142,6 +147,13 @@
       evt.preventDefault();
       evt.currentTarget.classList.toggle('faq-visible-li');
       evt.currentTarget.querySelector('p').classList.toggle('faq-visible');
+    });
+    faqItem[c].addEventListener('keydown', function (evt) {
+      if (evt.key === 'Enter') {
+        evt.preventDefault();
+        evt.currentTarget.classList.toggle('faq-visible-li');
+        evt.currentTarget.querySelector('p').classList.toggle('faq-visible');
+      }
     });
   }
 
@@ -203,7 +215,7 @@
 
   function showHomeSlider() {
     if ($homeSlider.data('owlCarousel') !== 'undefined') {
-      if (window.matchMedia('(max-width: 767px)').matches) {
+      if (window.matchMedia('(max-width: 1023px)').matches) {
         initialHomeSlider();
       } else {
         destroyHomeSlider();
@@ -232,7 +244,7 @@
     onInitialized: showsTotalAndCurrentItem,
     onTranslated: showsTotalAndCurrentItem,
     mouseDrag: false,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     startPosition: 2,
     slideTransition: '',

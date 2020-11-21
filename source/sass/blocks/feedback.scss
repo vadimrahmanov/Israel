@@ -39,7 +39,7 @@
 }
 
 .feedback__image {
-  width: 74.6%;
+  width: 28.7%;
   height: 100%;
 }
 
@@ -100,7 +100,7 @@
   color: $black;
   opacity: 0.74;
   margin: 0;
-  width: 81%;
+  width: 680px;
   display: block;
 
   &::before,
@@ -117,6 +117,7 @@
   color: $blue;
   padding-top: 16px;
   display: block;
+  width: 25%;
 
   &:hover {
     opacity: 0.5;
@@ -129,7 +130,7 @@
 
 .feedback__social-media {
   display: flex;
-  margin-top: 57px;
+  margin-top: 56px;
   margin-left: 4.3%;
   align-items: center;
 }
@@ -160,6 +161,7 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: 20%;
+  align-items: center;
 }
 
 .feedback__slide-content li {
@@ -182,18 +184,21 @@
   width: 10px;
   height: 20px;
   background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
 }
 
 .feedback__social-media-twitter a {
   width: 22px;
   height: 17px;
   background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
 }
 
 .feedback__social-media-instagram a {
   width: 23px;
   height: 25px;
   background-image: url("../img/insta.svg");
+  background-repeat: no-repeat;
 }
 
 .feedback__button {
@@ -233,6 +238,18 @@
 
   .feedback__social-media {
     margin-left: 7%;
+  }
+
+  .feedback__content q {
+    width: 380px;
+  }
+
+  .feedback__content a {
+    width: 45%;
+  }
+
+  .feedback__image {
+    align-self: center;
   }
 }
 
@@ -300,6 +317,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 23px;
+    width: 48%;
   }
 
   .feedback__controls {

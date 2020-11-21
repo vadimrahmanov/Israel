@@ -116,6 +116,7 @@
     background-image: url("../img/masaisrael-mobile.png");
     background-position: center 60px;
     min-height: 440px;
+    background-size: 100% auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/masaisrael-mobile@2x.png");

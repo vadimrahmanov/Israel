@@ -162,18 +162,20 @@
   .israel__slider {
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     position: static;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .israel__slide {
+    margin: 0 auto;
+
     &--slide1,
     &--slide2,
     &--slide3,
     &--slide4,
     &--slide5 {
       width: 65%;
-      margin-top: 40px;
     }
 
     &--slide1 p {
@@ -186,11 +188,24 @@
       left: 27%;
     }
 
+    &--slide3,
+    &--slide4 {
+      margin-top: 16%;
+      width: 88%;
+    }
+
+    &--slide3 p {
+      width: 515px;
+    }
+
+    &--slide4 p {
+      width: 530px;
+      left: 86px;
+    }
+
     &--slide4,
     &--slide5 {
-      position: relative;
-      left: 0;
-      bottom: 0;
+      position: static;
     }
   }
 }

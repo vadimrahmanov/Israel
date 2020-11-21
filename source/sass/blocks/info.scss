@@ -78,8 +78,13 @@
   }
 }
 
-.info__location p + p {
+.info__location a {
+  font-family: $firasans;
   font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $black;
+  opacity: 0.74;
   text-transform: uppercase;
   padding-left: 0;
   letter-spacing: -1px;
@@ -394,7 +399,7 @@
     }
   }
 
-  .info__location p + p {
+  .info__location a {
     padding-top: 1px;
   }
 
