@@ -95,6 +95,11 @@
   &:valid {
     border: 2px solid rgba($color: $black, $alpha: 0.5);
   }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $yellow;
+  }
 }
 
 .modal-call-request__window input::placeholder {

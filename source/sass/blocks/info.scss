@@ -93,6 +93,14 @@
   padding-right: 2px;
   position: relative;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
   &::before {
     display: none;
   }
@@ -276,6 +284,11 @@
 
   &:valid {
     border: 2px solid rgba($color: $black, $alpha: 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $yellow;
   }
 }
 
