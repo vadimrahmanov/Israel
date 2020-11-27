@@ -1,4 +1,4 @@
-# Project ISRAEL (Vadim Rakhmanov)
+# Project "ISRAEL" (Vadim Rakhmanov)
 ## A short guide
 ### To get started, you must have installed:
 * Node.js v.10.15.3
