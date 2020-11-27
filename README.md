@@ -1,16 +1,17 @@
-# Проект "Израиль" (Вадим Рахманов)
-## Краткая инструкция по работе
-### Для начала работы у вас должент быть установлен:
+# Project ISRAEL (Vadim Rakhmanov)
+## A short guide
+### To get started, you must have installed:
 * Node.js v.10.15.3
 * Gulp v4
 * npm last version
-## Основные команды для работы
-* Установка - `npm i`
-* Запуск локального сервера - `npm start`
-* Сборка проекта без запуска локального сервера - `npm run-script build`
-* Запуск тестирования на соответствия код-гайдам - `npm test`
+## Basic commands for work
+* Installation - `npm i`
+* Running a local server - `npm start`
+* Building a project without starting a local server - `npm run-script build`
+* Running testing for compliance with code guides - `npm test`
 
-## Вся разработка ведёться в директории `source`
-## Итоговый код попадает в директорию `build`
+## All development is done in the directory `source`
+## The resulting code goes to the directory `build`
 
-Если у вас есть желание что-то изменить или улучшить, пожалуйста, открывайте pull request с вашими комментариями.
+Project is ready for integration with CMS.
+If you have a desire to change or improve something, please open a pull request with your comments.
