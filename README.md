@@ -13,5 +13,5 @@
 ## All development is done in the directory `source`
 ## The resulting code goes to the directory `build`
 
-Project is ready for integration with CMS.
-If you have a desire to change or improve something, please open a pull request with your comments.
+*Project is ready for integration with CMS.
+*If you have a desire to change or improve something, please open a pull request with your comments.
